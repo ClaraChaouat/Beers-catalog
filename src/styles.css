@@ -1,13 +1,12 @@
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
- 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -108,7 +107,6 @@ footer, header, hgroup, menu, nav, section {
 }*/
 body {
   line-height: 1;
-
 }
 ol,
 ul {
@@ -133,7 +131,6 @@ table {
 body {
   margin: 0;
   /* font-family: "Gilroy", sans-serif; */
- 
 }
 
 html,
@@ -147,435 +144,412 @@ body {
   font-family: "Gilroy", sans-serif;
 } */
 
-
-
-
 @font-face {
-    font-family: "Druk Cond Super";
-    src: url('./fonts/Druk Cond Super.otf');
-    font-weight: normal;
-    font-style: normal;
-    
+  font-family: "Druk Cond Super";
+  src: url("./fonts/Druk Cond Super.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Druk Wide Super";
-    src: url('./fonts/Druk Wide Super.otf');
-    font-weight: normal;
-    font-style: normal;
-    
+  font-family: "Druk Wide Super";
+  src: url("./fonts/Druk Wide Super.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Helvetica Neue Bold";
-    src: url('./fonts/Helvetica-Neue-Bold_22498.ttf');
-    font-weight: normal;
-    font-style: normal;
-   
+  font-family: "Helvetica Neue Bold";
+  src: url("./fonts/Helvetica-Neue-Bold_22498.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
-
-
 
 .header {
-    display:flex;
-    position:relative;
-    height: 120px;
-    width: 1440px;
-    background:#FFFFFF;
-    border-bottom:1px solid #D8D8D8;
-    z-index:100;
-    
+  display: flex;
+  position: relative;
+  height: 120px;
+  width: 1440px;
+  background: #ffffff;
+  border-bottom: 1px solid #d8d8d8;
+  z-index: 100;
 }
 
 .header-image {
-    font-family: "Apple Color Emoji";
+  font-family: "Apple Color Emoji";
 }
 
 .header-capital-letter {
-    position:absolute;
-    left:60px;
-    height: 87px;
-    justify-content:end;
-    width: 25px;
-    color: #000000;
-    font-family: "Druk Cond Super";
-    font-size: 80px;
-    letter-spacing: 0;
-    line-height: 89px;
-
+  position: absolute;
+  left: 60px;
+  height: 87px;
+  justify-content: end;
+  width: 25px;
+  color: #000000;
+  font-family: "Druk Cond Super";
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 89px;
 }
 
 .header-image {
-    position:absolute;
-    right:57px;
-    height: 66px;
-    width: 50px;
-    color: #000000;
-    font-family: "Apple Color Emoji";
-    font-size: 50px;
-    letter-spacing: 0;
-    line-height: 66px;
-    
+  position: absolute;
+  right: 57px;
+  height: 66px;
+  width: 50px;
+  color: #000000;
+  font-family: "Apple Color Emoji";
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 66px;
 }
 
 .beers-title {
-    display:flex;
-    align-items: center;
-    height: 1131px;
-    writing-mode: vertical-rl;
-    color: #FFCF00;
-    font-family: "Druk Wide Super";
-    font-size: 884px;
-    letter-spacing: 0;
-    line-height: 1157px;
-    /* background-color:red; */
-    margin: 0 auto;
-    margin-top:-400px;
-    z-index:0;
+  display: flex;
+  align-items: center;
+  height: 1131px;
+  writing-mode: vertical-rl;
+  color: #ffcf00;
+  font-family: "Druk Wide Super";
+  font-size: 884px;
+  letter-spacing: 0;
+  line-height: 1157px;
+  margin: 0 auto;
+  margin-top: -400px;
+  z-index: 0;
 }
 
 .arcade-nation-beer {
-    display:flex;
-    flex-direction: column;
-    align-items:flex-end;
-    position:absolute;
-    left:120px;
-    top:445px;
-    height: 171px;
-    width: 299px;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  left: 40px;
+  top: 445px;
+  height: 171px;
+  width: 299px;
 }
 
 .arcade-nation-title {
-    height: 64px;
-    width: 299px;
-    color: #000000;
-    font-family: "Druk Cond Super";
-    font-size: 80px;
-    letter-spacing: 0;
-    line-height: 64px;
-    margin-bottom:10px;
-    text-align:right;
-   
-
+  height: 64px;
+  width: 299px;
+  color: #000000;
+  font-family: "Druk Cond Super";
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 64px;
+  margin-bottom: 10px;
+  text-align: right;
 }
 
-.arcade-nation-subtitle{
-    height: 30px;
-    width: 240px;
-    color: #000000;
-    font-family: "Helvetica Neue Bold";
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 30px;
-    margin-bottom:15px;
-    text-align:right;
-
+.arcade-nation-subtitle {
+  height: 30px;
+  width: 240px;
+  color: #000000;
+  font-family: "Helvetica Neue Bold";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-bottom: 15px;
+  text-align: right;
 }
 
 .see-more-btn {
-    height: 49px;
-    width: 180px;
-    background-color: #000000;
-    color: #FFFFFF;
-    font-family: "Helvetica Neue Bold";
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 49px;
-    padding:0;
-    border:0;
+  height: 49px;
+  width: 180px;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Helvetica Neue Bold";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 49px;
+  padding: 0;
+  border: 0;
+  cursor:pointer;
 
 }
 
+.see-more-btn:hover {
+  color: #ffcf00;;
+  background-color:#262626;
+
+}
 
 .movember-beer {
-    display:flex;
-    flex-direction: column;
-    align-items:flex-start;
-    position:absolute;
-    right:130px;
-    top:790px;
-    height: 185px;
-    width: 298px;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  right: 40px;
+  top: 790px;
+  height: 185px;
+  width: 298px;
 }
 
 .movember-title {
-    height: 64px;
-    width: 298px;
-    color: #000000;
-    font-family: "Druk Cond Super";
-    font-size: 80px;
-    letter-spacing: 0;
-    line-height: 64px;
-    margin-bottom:10px;
-    text-align:left;
-   
-
+  height: 64px;
+  width: 298px;
+  color: #000000;
+  font-family: "Druk Cond Super";
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 64px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
-.movember-subtitle{
-    height: 30px;
-    width: 240px;
-    color: #000000;
-    font-family: "Helvetica Neue Bold";
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 22px;
-    margin-bottom:20px;
-    text-align:left;
-
-}
-
-.see-more-btn {
-    height: 49px;
-    width: 180px;
-    background-color: #000000;
-    color: #FFFFFF;
-    font-family: "Helvetica Neue Bold";
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 49px;
-    padding:0;
-    border:0;
-  
-
+.movember-subtitle {
+  height: 30px;
+  width: 240px;
+  color: #000000;
+  font-family: "Helvetica Neue Bold";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .alpha-dog-beer {
-    display:flex;
-    flex-direction: column;
-    align-items:flex-end;
-    position:absolute;
-    left:120px;
-    top:1470px;
-    height: 171px;
-    width: 299px;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  left: 40px;
+  top: 1470px;
+  height: 171px;
+  width: 299px;
 }
 
 .alpha-dog-title {
-    height: 64px;
-    width: 299px;
-    color: #000000;
-    font-family: "Druk Cond Super";
-    font-size: 80px;
-    letter-spacing: 0;
-    line-height: 64px;
-    margin-bottom:10px;
-    text-align:right;
-   
-
+  height: 64px;
+  width: 299px;
+  color: #000000;
+  font-family: "Druk Cond Super";
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 64px;
+  margin-bottom: 10px;
+  text-align: right;
 }
 
-.alpha-dog-subtitle{
-    height: 30px;
-    width: 240px;
-    color: #000000;
-    font-family: "Helvetica Neue Bold";
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 30px;
-    margin-bottom:15px;
-    text-align:right;
-
+.alpha-dog-subtitle {
+  height: 30px;
+  width: 240px;
+  color: #000000;
+  font-family: "Helvetica Neue Bold";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-bottom: 15px;
+  text-align: right;
 }
-
-.see-more-btn {
-    height: 49px;
-    width: 180px;
-    background-color: #000000;
-    color: #FFFFFF;
-    font-family: "Helvetica Neue Bold";
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 49px;
-    padding:0;
-    border:0;
-
-}
-
-
 
 .mixtape-beer {
-    display:flex;
-    flex-direction: column;
-    align-items:flex-start;
-    position:absolute;
-    right:130px;
-    top:1816px;
-    height: 185px;
-    width: 298px;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  right: 40px;
+  top: 1816px;
+  height: 185px;
+  width: 298px;
 }
 
 .mixtape-title {
-    height: 64px;
-    width: 298px;
-    color: #000000;
-    font-family: "Druk Cond Super";
-    font-size: 80px;
-    letter-spacing: 0;
-    line-height: 64px;
-    margin-bottom:10px;
-    text-align:left;
-   
-
+  height: 64px;
+  width: 298px;
+  color: #000000;
+  font-family: "Druk Cond Super";
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 64px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
-.mixtape-subtitle{
-    height: 66px;
-    width: 299px;
-    color: #000000;
-    font-family: "Helvetica Neue Bold";
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 22px;
-    margin-bottom:20px;
-    text-align:left;
-
+.mixtape-subtitle {
+  height: 66px;
+  width: 299px;
+  color: #000000;
+  font-family: "Helvetica Neue Bold";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 20px;
+  text-align: left;
 }
-
-.see-more-btn {
-    height: 49px;
-    width: 180px;
-    background-color: #000000;
-    color: #FFFFFF;
-    font-family: "Helvetica Neue Bold";
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 49px;
-    padding:0;
-    border:0;
-  
-
-}
-
 
 .libertine-porter-beer {
-    display:flex;
-    flex-direction: column;
-    align-items:flex-end;
-    position:absolute;
-    left:120px;
-    top:2350px;
-    height: 253px;
-    width: 301px;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  left: 35px;
+  top: 2350px;
+  height: 253px;
+  width: 301px;
 }
 
 .libertine-porter-title {
-    height: 128px;
-    width: 301px;
-    color: #000000;
-    font-family: "Druk Cond Super";
-    font-size: 80px;
-    letter-spacing: 0;
-    line-height: 64px;
-    margin-bottom:10px;
-    text-align:right;
-   
-
+  height: 128px;
+  width: 301px;
+  color: #000000;
+  font-family: "Druk Cond Super";
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 64px;
+  margin-bottom: 10px;
+  text-align: right;
 }
 
-.libertine-porter-subtitle{
-    height: 48px;
-    width: 301px;
-    color: #000000;
-    font-family: "Helvetica Neue Bold";
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 30px;
-    margin-bottom:15px;
-    text-align:right;
-
+.libertine-porter-subtitle {
+  height: 48px;
+  width: 301px;
+  color: #000000;
+  font-family: "Helvetica Neue Bold";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-bottom: 15px;
+  text-align: right;
 }
-
-.see-more-btn {
-    height: 49px;
-    width: 180px;
-    background-color: #000000;
-    color: #FFFFFF;
-    font-family: "Helvetica Neue Bold";
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 49px;
-    padding:0;
-    border:0;
-
-}
-
 
 .ab-beer {
-    display:flex;
-    flex-direction: column;
-    align-items:flex-start;
-    position:absolute;
-    right:130px;
-    top:2655px;
-    height: 163px;
-    width: 298px;
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  right: 40px;
+  top: 2655px;
+  height: 163px;
+  width: 298px;
 }
 
 .ab-title {
-    height: 64px;
-    width: 298px;
-    color: #000000;
-    font-family: "Druk Cond Super";
-    font-size: 80px;
-    letter-spacing: 0;
-    line-height: 64px;
-    margin-bottom:10px;
-    text-align:left;
-   
-
+  height: 64px;
+  width: 298px;
+  color: #000000;
+  font-family: "Druk Cond Super";
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 64px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
-.ab-subtitle{
-    height: 22px;
-    width: 299px;
-    color: #000000;
-    font-family: "Helvetica Neue Bold";
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 22px;
-    margin-bottom:20px;
-    text-align:left;
-
+.ab-subtitle {
+  height: 22px;
+  width: 299px;
+  color: #000000;
+  font-family: "Helvetica Neue Bold";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.see-more-btn {
-    height: 49px;
-    width: 180px;
-    background-color: #000000;
-    color: #FFFFFF;
-    font-family: "Helvetica Neue Bold";
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 49px;
-    padding:0;
-    border:0;
-  
-
+.russian-doll-beer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  left: 40px;
+  bottom: -3080px;
+  height: 229px;
+  width: 300px;
 }
 
+.russian-doll-title {
+  height: 128px;
+  width: 300px;
+  color: #000000;
+  font-family: "Druk Cond Super";
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 64px;
+  margin-bottom: 10px;
+  text-align: right;
+}
 
+.russian-doll-subtitle {
+  height: 24px;
+  width: 240px;
+  color: #000000;
+  font-family: "Helvetica Neue Bold";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.mette-marit-beer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  right: 130px;
+  top: 3780px;
+  height: 231px;
+  width: 299px;
+}
+
+.mette-marit-title {
+  height: 128px;
+  width: 299px;
+  color: #000000;
+  font-family: "Druk Cond Super";
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 64px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.mette-marit-subtitle {
+  height: 22px;
+  width: 299px;
+  color: #000000;
+  font-family: "Helvetica Neue Bold";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.footer-rectangle {
+  display: flex;
+  position: relative;
+  margin-top: 3450px;
+  align-items: center;
+  height: 120px;
+  width: 1440px;
+  font-family: "Helvetica Neue Bold";
+  z-index: 1000;
+  border-bottom: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+  background-color: #ffffff;
+}
+
+.footer-text {
+  margin-left: 60px;
+  height: 24px;
+  width: 83px;
+  font-family: "Helvetica Neue Bold";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+}
