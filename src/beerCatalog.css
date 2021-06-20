@@ -1,0 +1,664 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+     v2.0 | 20110126
+     License: none (public domain)
+     CSS reset
+  */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/*article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+      display: block;
+  }*/
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* --------------Adding font-types----------------- */
+
+@font-face {
+  font-family: "Druk Cond Super";
+  src: url("./fonts/Druk Cond Super.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Druk Wide Super";
+  src: url("./fonts/Druk Wide Super.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  src: url("./fonts/Helvetica-Neue-Bold_22498.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* --------------Color variables----------------- */
+
+:root {
+  --beer-names-color: #ffcf00;
+  --border-color: #d8d8d8;
+  --titles-color: #000000;
+  --backgrounds-color: #ffffff;
+  --on-hover-btn-background-color: #262626;
+  --closing-cross-color: black;
+  --beer-specification-title-color: #cccccc;
+}
+
+/* --------------Beer catalog css----------------- */
+
+li {
+  list-style-type: none;
+}
+
+img {
+  height: 700px;
+  width: 180px;
+  white-space: nowrap;
+}
+
+button {
+  height: 49px;
+  width: 180px;
+  background-color: var(--titles-color);
+  color: var(--backgrounds-color);
+  font-family: "Helvetica Neue Bold";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 49px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--beer-names-color);
+  background-color: var(--on-hover-btn-background-color);
+}
+
+/* --------------Beer catalog Wrapper----------------- */
+
+.beerCatalog-wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* --------------Beer catalog Header----------------- */
+
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  background: var(--backgrounds-color);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 100;
+}
+
+.header-capital-letter {
+  height: 87px;
+  width: 25px;
+  color: var(--titles-color);
+  font-family: "Druk Cond Super";
+  font-size: 80px;
+  letter-spacing: 0;
+  margin-left: 60px;
+  line-height: 89px;
+}
+
+.header-image {
+  height: 66px;
+  width: 50px;
+  color: var(--titles-color);
+  font-family: "Apple Color Emoji";
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 66px;
+  margin-right: 57px;
+  font-family: "Apple Color Emoji";
+}
+
+/* --------------Beer catalog main container----------------- */
+
+.item {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 50%;
+}
+
+.item-inner {
+  display: flex;
+  align-items: center;
+  height: min-content;
+}
+
+.beers-title {
+  display: flex;
+  align-items: center;
+  height: 1131px;
+  writing-mode: vertical-rl;
+  color: var(--beer-names-color);
+  font-family: "Druk Wide Super";
+  font-size: 884px;
+  letter-spacing: 0;
+  line-height: 1157px;
+  margin: 0 auto;
+  margin-top: -400px;
+  z-index: 0;
+}
+
+.beers-list {
+  position: absolute;
+  top: 180px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* --------------Beer names styling ----------------- */
+
+h1 {
+  color: var(--titles-color);
+  font-family: "Druk Cond Super";
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 64px;
+  margin-bottom: 10px;
+  text-align: end;
+}
+
+h2 {
+  color: var(--titles-color);
+  font-family: "Helvetica Neue Bold";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-bottom: 15px;
+  text-align: end;
+  word-wrap: break-word;
+}
+
+/* --------------Beer catalog left side beers----------------- */
+
+.item:nth-child(2n + 1) {
+  justify-content: flex-end;
+}
+
+.item:nth-child(2n + 1) .beer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 30px;
+}
+
+#beer-subtitle15 {
+  margin-bottom: 35px;
+}
+
+/* --------------Beer catalog right side beers----------------- */
+
+.item:nth-child(2n) .item-inner {
+  flex-direction: row-reverse;
+}
+
+.item:nth-child(2n) {
+  margin-top: 300px;
+}
+
+.item:nth-child(2n) .beer-info {
+  padding-left: 30px;
+}
+
+.item:nth-child(2n) h1 {
+  text-align: start;
+}
+
+.item:nth-child(2n) h2 {
+  text-align: start;
+}
+
+/* --------------Beer catalog button----------------- */
+
+.see-more-button {
+  height: 49px;
+  width: 180px;
+  background-color: var(--titles-color);
+  color: var(--backgrounds-color);
+  font-family: "Helvetica Neue Bold";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 49px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.see-more-btn:hover {
+  color: var(--beer-names-color);
+  background-color: var(--on-hover-btn-background-color);
+}
+
+/* --------------Beer catalog Footer----------------- */
+
+footer {
+  position: absolute;
+  height: 120px;
+  width: 100%;
+  top: 4300px;
+}
+
+.footer-rectangle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 120px;
+  font-family: "Helvetica Neue Bold";
+  z-index: 1000;
+  border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  background-color: var(--backgrounds-color);
+}
+
+.footer-text {
+  margin-left: 60px;
+  height: 24px;
+  font-family: "Helvetica Neue Bold";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+/* --------------Beer modal (beers description css)----------------- */
+
+/* --------------Beer catalog main wrapper----------------- */
+
+.beerModal-wrapper.hidden {
+  display: none;
+}
+
+.beerModal-wrapper {
+  float: right;
+  animation: move 1s ease;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  flex-direction: column;
+  width: 100vw;
+  background-color: var(--backgrounds-color);
+  z-index: 1000000000;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* --------------Beer modal Header----------------- */
+
+.beerModal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  background: var(--backgrounds-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.beerModal-header-capital-letter {
+  justify-content: end;
+  width: 25px;
+  color: var(--titles-color);
+  font-family: "Druk Cond Super";
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 89px;
+  margin-left: 50px;
+}
+
+.beerModal-header-image {
+  font-family: "Apple Color Emoji";
+  height: 66px;
+  width: 50px;
+  color: var(--titles-color);
+  font-family: "Apple Color Emoji";
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 66px;
+  margin-right: 35px;
+}
+
+.beerModal-header-closing-cross {
+  font-size: 80px;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  color: black;
+}
+
+/* --------------Beer modal main----------------- */
+
+.beerModal-main {
+  display: flex;
+  min-height: 100%;
+  min-height: 100%;
+}
+
+/* --------------Beer modal left side----------------- */
+
+.beerModal-left-side {
+  position: relative;
+  width: 722px;
+  width: 50%;
+  height: 1064px;
+  border-right: 1px solid var(--border-color);
+}
+
+.beerModal-beerName-text {
+  display: flex;
+  height: 616px;
+  height: 100%;
+  color: var(--beer-names-color);
+  font-family: "Druk Cond Super";
+  font-size: 400px;
+  letter-spacing: 0;
+  line-height: 300px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: auto;
+  z-index: 0;
+}
+
+.beerModal-beerName-img-container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 894px;
+  width: 230px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+/* --------------Beer modal right side----------------- */
+
+.beerModal-right-side {
+  width: 718px;
+  width: 50%;
+  height: 1064px;
+}
+
+/* --------------Beer modal right side content----------------- */
+
+.beerModal-right-side-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 52px;
+  margin-right: 119px;
+  margin-left: 119px;
+}
+
+.beerModal-right-side-content-beerName {
+  color: var(--closing-cross-color);
+  font-family: "Druk Cond Super";
+  font-size: 80px;
+  letter-spacing: 0;
+  line-height: 64px;
+}
+
+.beerModal-right-side-content-beerTagline {
+  color: var(--closing-cross-color);
+  font-family: "Helvetica Neue Bold";
+  margin-top: 15px;
+}
+
+.beerModal-right-side-content-beerDescription {
+  font-family: "Helvetica Neue Bold";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-top: 45px;
+}
+
+/* --------------Beer modal right side specifications----------------- */
+
+.beerModal-right-side-content-beerSpecifications {
+  color: var(--beer-specification-title-color);
+  font-family: "Helvetica Neue Bold";
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
+  font-size: 20px;
+  margin-top: 77px;
+  margin-bottom: 26px;
+}
+
+.specifications-list {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+li.specifications-list > span {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+/* --------------Beer modal righht side ingredients----------------- */
+
+.beerModal-right-side-content-ingredients {
+  color: var(--beer-specification-title-color);
+  font-family: "Helvetica Neue Bold";
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.ingredients-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+  border-top: 1px solid var(--border-color);
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.food-pairing-content {
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: end;
+}
+
+.malt-ingredients-style {
+  font-size: 14px;
+  width: 360px;
+  height: 88px;
+  margin-top: 5px;
+  text-align: end;
+  overflow-y: hidden;
+}
+
+/* --------------Beer modal footer----------------- */
+
+.beerModal-footer {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  font-family: "Helvetica Neue Bold";
+  z-index: 1000;
+  border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  background-color: var(--backgrounds-color);
+  margin-top: auto;
+}
+
+.beerModal-footer-text {
+  margin-left: 60px;
+  height: 24px;
+  width: 83px;
+  font-family: "Helvetica Neue Bold";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+}
