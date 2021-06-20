@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/5ab304ade0d4f62d027d12464ca69443?family=Apple+Color+Emoji" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" type="text/css" href="beerCatalog.css" />
+    <title>Beer catalog</title>
+
+</head>
+
+
+<body>
+
+<!--Beer catalog (Beers list)-->
+
+    <!--Beer catalog wrapper-->
+
+    <div class="beerCatalog-wrapper">
+
+        <!--Header-->
+        <div class="header">
+            <div class="header-capital-letter">B</div>
+            <div class="header-image">
+                🍺
+            </div>
+        </div>
+
+        <!--Main Container-->
+        <div class="main">
+            <div class="beers-title">
+                BEERS
+            </div>
+            <div id="beer-results" class="beers-list">
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <div class=footer-rectangle>
+                <div class="footer-text">CHEERS</div>
+            </div>
+        </footer>
+    </div>
+
+    <!--Beer modal (Beers description)-->
+
+    <!-- Beer modal Wrapper-->
+
+    <div class="beerModal-wrapper hidden">
+
+        <!-- Beer modal Header-->
+        <div class="beerModal-header">
+            <div class="beerModal-header-capital-letter">B</div>
+            <div class="beerModal-header-closing-cross js-closing-cross">+</div>
+            <div class="beerModal-header-image">
+                🍺
+            </div>
+
+        </div>
+
+        <!--Beer modal main-->
+
+        <div class="beerModal-main">
+
+            <!--Beer modal left side-->
+
+            <div class="beerModal-left-side">
+
+                <div data-id="beer-name" class="beerModal-beerName-text"></div>
+                <div class="beerModal-beerName-img-container"><img data-id="beer-img"
+                        class="beerModal-beerName-img"></img>
+                </div>
+
+            </div>
+
+            <!--Beer modal right side-->
+
+            <div class="beerModal-right-side">
+
+                <!--Beer modal right side contents-->
+
+                <div class="beerModal-right-side-content">
+                    <div data-id="beer-name-right-side" class="beerModal-right-side-content-beerName"></div>
+                    <div data-id="beer-tagline" class="beerModal-right-side-content-beerTagline"></div>
+                    <div data-id="beer-description" class="beerModal-right-side-content-beerDescription">
+                    </div>
+
+                    <!--Beer modal right side specifications-->
+
+                    <div class="beerModal-right-side-content-beerSpecifications">SPECIFICATIONS</div>
+                    <ul class="beerModal-right-side-content-beerSpecifications-list">
+                        <li class="specifications-list">
+                            <span class="first-brewed-style">FIRST BREWED</span>
+                            <span data-id="first-brewed" class"first-brewed-date"></span>
+                        </li>
+                        <li class="specifications-list">
+                            <span class="abv-style" ->ABV</span>
+                            <span data-id="abv-value" class"abv-style-value"></span>
+                        </li>
+                        <li class="specifications-list">
+                            <span class="ibu" ->IBU</span>
+                            <span data-id="ibu-value" class"ibu-value"></span>
+                        </li>
+                        <li class="specifications-list">
+                            <span class="ebc-srm">EBC / SRM</span>
+                            <span data-id="ebc-value" data-id="srm-value" class"ebc-srm-value"></span>
+                        </li>
+
+                        <!--Beer modal right side ingredients-->
+
+                        <div class="beerModal-right-side-content-ingredients">INGREDIENTS</div>
+                        <ul class="beerModal-right-side-content-ingredients-lists">
+                            <li class="ingredients-list">
+                                <span class="malt-style">MALT</span>
+                                <span data-id="malt-ingredients" class="malt-ingredients-style"></span>
+                            </li>
+                            <li class="ingredients-list">
+                                <span class="food-pairing-title" ->FOOD PAIRING</span>
+                                <span data-id="food-pairing" class="food-pairing-content"></span>
+                            </li>
+
+                        </ul>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!--Beer modal Footer-->
+        <div class="beerModal-footer">
+            <div class="beerModal-footer-text">CHEERS</div>
+        </div>
+    </div>
+
+
+    <script src="./scripts.js"></script>
+    <div id="hidden-resizer" style="visibility: hidden"></div>
+
+</body>
+
+</html>
