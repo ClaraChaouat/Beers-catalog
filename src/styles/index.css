@@ -149,22 +149,22 @@ body {
 /* --------------Adding font-types----------------- */
 
 @font-face {
-  font-family: "Druk Cond Super";
-  src: url("./fonts/Druk Cond Super.otf");
+  font-family: "druk-cond-super";
+  src: url("../fonts/druk-cond-super.otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Druk Wide Super";
-  src: url("./fonts/Druk Wide Super.otf");
+  font-family: "druk-wide-super";
+  src: url("../fonts/druk-wide-super.otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Helvetica Neue Bold";
-  src: url("./fonts/Helvetica-Neue-Bold_22498.ttf");
+  font-family: "helvetica-neue-bold";
+  src: url("../fonts/helvetica-neue-bold.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -195,10 +195,10 @@ img {
 
 button {
   height: 49px;
-  width: 180px;
+  /* width: 180px; */
   background-color: var(--titles-color);
   color: var(--backgrounds-color);
-  font-family: "Helvetica Neue Bold";
+  font-family: "helvetica-neue-bold";
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0;
@@ -237,7 +237,7 @@ button:hover {
   height: 87px;
   width: 25px;
   color: var(--titles-color);
-  font-family: "Druk Cond Super";
+  font-family: "druk-cond-super";
   font-size: 80px;
   letter-spacing: 0;
   margin-left: 60px;
@@ -277,7 +277,7 @@ button:hover {
   height: 1131px;
   writing-mode: vertical-rl;
   color: var(--beer-names-color);
-  font-family: "Druk Wide Super";
+  font-family: "druk-wide-super";
   font-size: 884px;
   letter-spacing: 0;
   line-height: 1157px;
@@ -297,7 +297,7 @@ button:hover {
 
 h1 {
   color: var(--titles-color);
-  font-family: "Druk Cond Super";
+  font-family: "druk-cond-super";
   font-size: 80px;
   letter-spacing: 0;
   line-height: 64px;
@@ -307,7 +307,7 @@ h1 {
 
 h2 {
   color: var(--titles-color);
-  font-family: "Helvetica Neue Bold";
+  font-family: "helvetica-neue-bold";
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0;
@@ -363,7 +363,7 @@ h2 {
   width: 180px;
   background-color: var(--titles-color);
   color: var(--backgrounds-color);
-  font-family: "Helvetica Neue Bold";
+  font-family: "helvetica-neue-bold";
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0;
@@ -393,7 +393,7 @@ footer {
   display: flex;
   align-items: center;
   height: 120px;
-  font-family: "Helvetica Neue Bold";
+  font-family: "helvetica-neue-bold";
   z-index: 1000;
   border-bottom: 1px solid var(--border-color);
   border-top: 1px solid var(--border-color);
@@ -403,7 +403,7 @@ footer {
 .footer-text {
   margin-left: 60px;
   height: 24px;
-  font-family: "Helvetica Neue Bold";
+  font-family: "helvetica-neue-bold";
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0;
@@ -454,7 +454,7 @@ footer {
   justify-content: end;
   width: 25px;
   color: var(--titles-color);
-  font-family: "Druk Cond Super";
+  font-family: "druk-cond-super";
   font-size: 80px;
   letter-spacing: 0;
   line-height: 89px;
@@ -503,7 +503,7 @@ footer {
   height: 616px;
   height: 100%;
   color: var(--beer-names-color);
-  font-family: "Druk Cond Super";
+  font-family: "druk-cond-super";
   font-size: 400px;
   letter-spacing: 0;
   line-height: 300px;
@@ -548,7 +548,7 @@ footer {
 
 .beerModal-right-side-content-beerName {
   color: var(--closing-cross-color);
-  font-family: "Druk Cond Super";
+  font-family: "druk-cond-super";
   font-size: 80px;
   letter-spacing: 0;
   line-height: 64px;
@@ -556,12 +556,12 @@ footer {
 
 .beerModal-right-side-content-beerTagline {
   color: var(--closing-cross-color);
-  font-family: "Helvetica Neue Bold";
+  font-family: "helvetica-neue-bold";
   margin-top: 15px;
 }
 
 .beerModal-right-side-content-beerDescription {
-  font-family: "Helvetica Neue Bold";
+  font-family: "helvetica-neue-bold";
   font-size: 14px;
   letter-spacing: 0;
   line-height: 22px;
@@ -572,7 +572,7 @@ footer {
 
 .beerModal-right-side-content-beerSpecifications {
   color: var(--beer-specification-title-color);
-  font-family: "Helvetica Neue Bold";
+  font-family: "helvetica-neue-bold";
   font-weight: bold;
   letter-spacing: 0;
   line-height: 30px;
@@ -602,7 +602,7 @@ li.specifications-list > span {
 
 .beerModal-right-side-content-ingredients {
   color: var(--beer-specification-title-color);
-  font-family: "Helvetica Neue Bold";
+  font-family: "helvetica-neue-bold";
   font-weight: bold;
   letter-spacing: 0;
   line-height: 30px;
@@ -644,7 +644,7 @@ li.specifications-list > span {
   display: flex;
   align-items: center;
   height: 120px;
-  font-family: "Helvetica Neue Bold";
+  font-family: "helvetica-neue-bold";
   z-index: 1000;
   border-bottom: 1px solid var(--border-color);
   border-top: 1px solid var(--border-color);
@@ -656,7 +656,7 @@ li.specifications-list > span {
   margin-left: 60px;
   height: 24px;
   width: 83px;
-  font-family: "Helvetica Neue Bold";
+  font-family: "helvetica-neue-bold";
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0;
