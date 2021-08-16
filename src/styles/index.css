@@ -195,7 +195,6 @@ img {
 
 button {
   height: 49px;
-  /* width: 180px; */
   background-color: var(--titles-color);
   color: var(--backgrounds-color);
   font-family: "helvetica-neue-bold";
@@ -274,7 +273,11 @@ button:hover {
 .beers-title {
   display: flex;
   align-items: center;
-  height: 1131px;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
   writing-mode: vertical-rl;
   color: var(--beer-names-color);
   font-family: "druk-wide-super";
@@ -284,13 +287,15 @@ button:hover {
   margin: 0 auto;
   margin-top: -400px;
   z-index: 0;
+  /* background-color: green; */
 }
 
 .beers-list {
-  position: absolute;
-  top: 180px;
+  position:relative;
   display: flex;
   flex-wrap: wrap;
+  /* background-color: pink; */
+
 }
 
 /* --------------Beer names styling ----------------- */
