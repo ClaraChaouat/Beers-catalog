@@ -1,6 +1,6 @@
 # Layout Replica challenge using Grid & Flexbox
 <p align="center">
-  <img width="500" src="../images/beerMenuAnimationb.gif"/>
+  <img width="700" src="./src/images/beerMenuAnimationb.gif"/>
 </p>
 
 ## Description:woman_teacher:
