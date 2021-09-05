@@ -421,7 +421,7 @@ footer {
 
 .beerModal-wrapper {
   float: right;
-  animation: move 1s ease;
+  animation: move 0.5s ease;
   display: flex;
   position: fixed;
   top: 0px;
