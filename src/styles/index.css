@@ -423,7 +423,7 @@ footer {
   float: right;
   animation: move 1s ease;
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0px;
   flex-direction: column;
   width: 100vw;
