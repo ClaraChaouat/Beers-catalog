@@ -196,6 +196,7 @@ img {
 button {
   height: 49px;
   background-color: var(--titles-color);
+  background-color: yellow;
   color: var(--backgrounds-color);
   font-family: "helvetica-neue-bold";
   font-size: 14px;
