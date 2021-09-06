@@ -4,7 +4,7 @@
 </p>
 
 ## Description:woman_teacher:
-Your goal is to create a web page displaying a list of beers (😏) in the form of a product catalog. At the click of a beer, a side modal will open and display the details of the selected beer.
+Your goal is to create a web page displaying a list of beers (😏) in the form of a product catalog. At the click of a beer, a side modal will open and display the details of the selected beer. All the beers and beer details are fetched by calling an API.
 
 ## Installation:man_mechanic:
 1. Clone this repository from GitHub
@@ -20,7 +20,7 @@ This project is built using:
 ## Demo:dancing_men:
 Willing to see this project without cloning the repo? Follow the link below :point_down: 
 
-https://beercatalog.netlify.app/
+https://beersmenu.netlify.app/
 
 
 
